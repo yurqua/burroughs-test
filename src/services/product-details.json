@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "200",
+      "product_price_sale": "160",
+      "products_colours": [
+        "blue",
+        "red",
+        "beige"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "200",
+      "product_price_sale": "130",
+      "products_colours": [
+        "blue",
+        "purple",
+        "beige"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "200",
+      "product_price_sale": "110",
+      "products_colours": [
+        "beige",
+        "red",
+        "blue"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "200",
+      "product_price_sale": "112",
+      "products_colours": [
+        "blue",
+        "red",
+        "orange"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "100",
+      "product_price_sale": "90",
+      "products_colours": [
+        "beige",
+        "red",
+        "blue"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "180",
+      "product_price_sale": "160",
+      "products_colours": [
+        "blue",
+        "red",
+        "orange"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "120",
+      "product_price_sale": "150",
+      "products_colours": [
+        "blue",
+        "red",
+        "beige"
+      ]
+    },
+    {
+      "product_title": "Plaid Cotton Shirt",
+      "product_price_original": "125",
+      "product_price_sale": "80",
+      "products_colours": [
+        "blue",
+        "red",
+        "orange"
+      ]
+    }
+  ]
+}
