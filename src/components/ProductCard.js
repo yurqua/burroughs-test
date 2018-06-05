@@ -5,7 +5,7 @@ import '../App.css';
 class ProductCard extends Component {
     render() {
       return (
-        <Col xs={12} md={3}>
+        <Col xs={12} md={3} className='product'>
          <div>Image</div>
          <div className='swatch-selector'>Swatch selector</div>
          <div className='product-name'>Product name</div>

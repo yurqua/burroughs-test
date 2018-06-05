@@ -13,7 +13,7 @@ class NavButton extends Component {
   }
   render() {
     return (
-      <Link to={this.state.url}>
+      <Link to={this.state.url} className='nav-button'>
         {this.state.name}
       </Link> 
     );

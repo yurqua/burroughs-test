@@ -1,0 +1,62 @@
+.what-we-do {
+    height: 537px;
+    text-align: center;
+    background: #ffde17;
+    background: -moz-linear-gradient(left, #ffde17 0%, #ffde17 50%, #ffc222 50%, #ffc222 100%);
+    background: -webkit-linear-gradient(left, #ffde17 0%,#ffde17 50%,#ffc222 50%,#ffc222 100%);
+    background: linear-gradient(to right, #ffde17 0%,#ffde17 50%,#ffc222 50%,#ffc222 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde17', endColorstr='#ffc222',GradientType=1 ); 
+    &:before {
+        content: " ";
+        position: absolute;
+        height: 537px;
+        background: #ffde17;
+        width: 100vw;
+        transform: translateX(-100vw);
+        box-shadow: $small-shadow-inner;
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        height: 537px;
+        background: #ffc222;
+        width: 100vw;
+        z-index: -500;
+        right: 0;
+        box-shadow: $small-shadow-inner;
+    }
+    .wrapper{
+        width: 100%;
+        height: 537px;
+        background: #ffde17;
+        background: -moz-linear-gradient(left, #ffde17 0%, #ffde17 25%, #ffd41c 25%, #ffd41c 50%, #ffcb1f 50%, #ffcb1f 75%, #ffc222 75%, #ffc222 100%);
+        background: -webkit-linear-gradient(left, #ffde17 0%,#ffde17 25%,#ffd41c 25%,#ffd41c 50%,#ffcb1f 50%,#ffcb1f 75%,#ffc222 75%,#ffc222 100%);
+        background: linear-gradient(to right, #ffde17 0%,#ffde17 25%,#ffd41c 25%,#ffd41c 50%,#ffcb1f 50%,#ffcb1f 75%,#ffc222 75%,#ffc222 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde17', endColorstr='#ffc222',GradientType=1 );
+        box-shadow: $small-shadow-inner;
+        &:after {
+            content: " ";
+            display: inline-block;
+            width: 147px; 
+            height: 147px; 
+            margin-top: 342px;
+            z-index: -1;
+            border-top: 73px solid transparent;
+            border-bottom: 73px solid #ffcb1f;
+            border-left: 73px solid #ffd41c;
+            border-right: 73px solid transparent;
+            // border-bottom: 73px solid red;
+            // border-left: 73px solid green;
+            transform: rotate(-45deg);    
+            box-shadow: $small-shadow; 
+        }
+        .quote-mark {
+            &:nth-child(3) {
+                background-color: #ffd41c;
+            }
+            &:nth-child(4) {
+                background-color: #ffcb1f;
+            }
+        }
+    }
+}

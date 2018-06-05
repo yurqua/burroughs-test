@@ -12,10 +12,10 @@ class Header extends Component {
           <Row>
             <Col xs="12" md="8">
               <nav>
-                <NavButton name='1' url='/' />
-                <NavButton name='2' url='/' />
-                <NavButton name='3' url='/' />
-                <NavButton name='4' url='/' />
+                <NavButton name='Case studies' url='/' />
+                <NavButton name='What we do' url='/' />
+                <NavButton name='Resources' url='/' />
+                <NavButton name='Contact us' url='/' />
               </nav>
             </Col>
             <Col xs="6" md="2">social</Col>
