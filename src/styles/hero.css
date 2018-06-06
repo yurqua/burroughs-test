@@ -6,4 +6,17 @@
   background: -webkit-linear-gradient(top, #ffde17 0%, #ffd41c 16%, #fbc616 33%, #fdb700 50%);
   background: linear-gradient(to bottom, #ffde17 0%, #ffd41c 16%, #fbc616 33%, #fdb700 50%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde17', endColorstr='#fdb700',GradientType=0 );
-  box-shadow: inset 0px 8px 18px -3px rgba(172, 172, 172, 0.43); }
+  box-shadow: inset 0px 8px 18px -3px rgba(172, 172, 172, 0.43);
+  text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.5); }
+  .hero .logo img {
+    width: 240px;
+    margin-top: 83px; }
+  .hero h2 {
+    text-transform: uppercase;
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-top: 50px; }
+  .hero .hero-content {
+    font-size: 1.05em;
+    line-height: 1.4em;
+    padding: 0 9px; }

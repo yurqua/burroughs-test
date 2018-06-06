@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .what-we-do {
     height: 537px;
     text-align: center;
@@ -25,6 +26,25 @@
         right: 0;
         box-shadow: $small-shadow-inner;
     }
+    .fake-triangle{
+        width: 100%;
+        height: 0px;
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 147px; 
+            height: 147px; 
+            margin-top: -73px;
+            z-index: 2;
+            left: calc(50% - 73px);
+            border-top: 73px solid white;
+            border-bottom: 73px solid white;
+            border-left: 73px solid white;
+            border-right: 73px solid white;
+            transform: rotate(-45deg);    
+            box-shadow: $small-shadow;
+        }
+    }
     .wrapper{
         width: 100%;
         height: 537px;
@@ -34,22 +54,6 @@
         background: linear-gradient(to right, #ffde17 0%,#ffde17 25%,#ffd41c 25%,#ffd41c 50%,#ffcb1f 50%,#ffcb1f 75%,#ffc222 75%,#ffc222 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde17', endColorstr='#ffc222',GradientType=1 );
         box-shadow: $small-shadow-inner;
-        &:after {
-            content: " ";
-            display: inline-block;
-            width: 147px; 
-            height: 147px; 
-            margin-top: 342px;
-            z-index: -1;
-            border-top: 73px solid transparent;
-            border-bottom: 73px solid #ffcb1f;
-            border-left: 73px solid #ffd41c;
-            border-right: 73px solid transparent;
-            // border-bottom: 73px solid red;
-            // border-left: 73px solid green;
-            transform: rotate(-45deg);    
-            box-shadow: $small-shadow; 
-        }
         .quote-mark {
             &:nth-child(3) {
                 background-color: #ffd41c;

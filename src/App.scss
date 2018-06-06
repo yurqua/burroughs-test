@@ -1,6 +1,23 @@
-@import 'styles/colors.scss';
+@import 'styles/variables.scss';
 @import 'styles/header.scss';
 @import 'styles/hero.scss';
 @import 'styles/products.scss';
 @import 'styles/what-we-do.scss';
 @import 'styles/resources.scss';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?53942234');
+    src: url('./font/fontello.eot?53942234#iefix') format('embedded-opentype'),
+         url('./font/fontello.woff?53942234') format('woff'),
+         url('./font/fontello.ttf?53942234') format('truetype'),
+         url('./font/fontello.svg?53942234#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+   

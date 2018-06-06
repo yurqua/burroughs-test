@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .hero {
     height: 623px;
     text-align: center;
@@ -13,4 +14,16 @@
             margin-top: 83px;
         }
     }
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.1em;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    .hero-content {
+        font-size: 1.05em;
+        line-height: 1.4em;
+        padding: 0 9px;
+    }
+    text-shadow: $text-shadow-white;
 }

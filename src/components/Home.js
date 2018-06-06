@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import ProductCard from './ProductCard'
 import Logo from '../images/inviqa-logo.svg'
+import { Animated } from 'react-animated-css';
 import '../App.css';
 
 class Home extends Component {
@@ -15,18 +16,22 @@ class Home extends Component {
           <Container fluid={true} className='hero'>
             <Container>
               <content>
-                <Row>
-                  <Col xs={12}>
-                    <div className='logo'><img src={Logo} alt='INVIQA Logo'/></div>
-                    <h2>We have a new name</h2>
-                    <span>
-                      Inviqa, formally known as Ibuildings are starting the
-                      new year with a fresh new innovative look. We are a bunch
-                      of intelligent people who always pride the 
-                      quality in our work.
-                    </span>
-                  </Col>
-                </Row>
+                <Animated animationIn="fadeInDownBig" animationOut="fadeOut" isVisible={true}>
+                  <Row>
+                    <Col xs={12}>
+                      <div className='logo'><img src={Logo} alt='INVIQA Logo'/></div>
+                      <h2>We have a new name</h2>
+                      <Row>
+                        <Col xs={12} md={{ size: 6, offset: 3 }} className='hero-content'>
+                          Inviqa, formally known as Ibuildings are starting the
+                          new&nbsp;year with a fresh new innovative look. We are a bunch
+                          of intelligent people who always pride the 
+                          quality&nbsp;in&nbsp;our&nbsp;work.
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Animated>
               </content>
             </Container>
           </Container>
@@ -45,8 +50,6 @@ class Home extends Component {
                   <ProductCard />
                   <ProductCard />
                   <ProductCard />
-                  <Col className='fake-triangle'>
-                  </Col>
                 </Row>
               </content>
             </Container>
@@ -55,6 +58,8 @@ class Home extends Component {
             <Container>
               <content>
                 <Row className='what-we-do'>
+                  <Col className='fake-triangle'>
+                  </Col>
                   <Col xs={12} className='wrapper'>
                     <Row>
                       <Col xs={12}>

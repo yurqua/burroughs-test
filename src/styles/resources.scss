@@ -1,9 +1,25 @@
+@import 'variables.scss';
 .resources {
     height: 537px;
     color: white;
     background: url('images/wood-pattern.gif');
     background-color: #252524;
     box-shadow: $small-shadow-inner;
+    &.row:before {
+        content: " ";
+        display: inline-block;
+        width: 147px;
+        height: 147px;
+        margin-top: -73px;
+        margin-left: calc(50% - 73px);
+        z-index: 1;
+        border-top: 0 solid transparent;
+        border-bottom: 73px solid #ffcb1f;
+        border-left: 73px solid #ffd41c;
+        border-right: 73px solid transparent;
+        transform: rotate(-45deg);    
+        box-shadow: $small-shadow; 
+    }
 }
 .footer {
     height: 92px;

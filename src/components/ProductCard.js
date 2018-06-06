@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import '../App.css';
 
 class ProductCard extends Component {
