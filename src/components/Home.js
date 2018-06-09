@@ -54,28 +54,36 @@ class Home extends Component {
               </content>
             </Container>
           </Container>
-          <Container fluid={true}>
+          <Container fluid={true} className='what-we-do'>
             <Container>
               <content>
-                <Row className='what-we-do'>
+                <Row>
                   <Col className='fake-triangle'>
                   </Col>
                   <Col xs={12} className='wrapper'>
                     <Row>
-                      <Col xs={12}>
-                        <h2>What we do</h2>
+                      <Col xs={12} className='header'>
+                        <h2>What we&nbsp;do</h2>
                       </Col>
-                      <Col xs={12} md={3} className='quote-mark'>
-                        <h3>Web development</h3>
+                      <Col xs={12} sm={6} md={3} className='quote-mark'>
+                        <span>
+                          <h3>Web <br/> development</h3>
+                        </span>
                       </Col>
-                      <Col xs={12} md={3} className='quote-mark'>
-                        <h3>PHP consulting</h3>
+                      <Col xs={12} sm={6} md={3} className='quote-mark'>
+                        <span>
+                          <h3>PHP <br/> consulting</h3>
+                        </span>
                       </Col>
-                      <Col xs={12} md={3} className='quote-mark'>
-                        <h3>PHP training</h3>
+                      <Col xs={12} sm={6} md={3} className='quote-mark'>
+                        <span>
+                          <h3>PHP <br/> training</h3>
+                        </span>
                       </Col>
-                      <Col xs={12} md={3} className='quote-mark'>
-                        <h3>Application support</h3>
+                      <Col xs={12} sm={6} md={3} className='quote-mark'>
+                        <span>
+                          <h3>Application <br/> support</h3>
+                        </span>
                       </Col>
                     </Row>
                   </Col>

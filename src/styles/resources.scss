@@ -1,6 +1,8 @@
 @import 'variables.scss';
 .resources {
     height: 537px;
+    position: relative;
+    z-index: -100;
     color: white;
     background: url('images/wood-pattern.gif');
     background-color: #252524;
@@ -10,7 +12,7 @@
         display: inline-block;
         width: 147px;
         height: 147px;
-        margin-top: -73px;
+        margin-top: -74px;
         margin-left: calc(50% - 73px);
         z-index: 1;
         border-top: 0 solid transparent;
@@ -25,4 +27,12 @@
     height: 92px;
     background-color: #ffdb05;
     box-shadow: $big-shadow-inner;
+}
+@media screen and (max-width: 768px) {
+    .resources {
+        &.row:before {
+            border-bottom: 73px solid #ffc222;
+            border-left: 73px solid #ffde17;
+        }
+    }
 }

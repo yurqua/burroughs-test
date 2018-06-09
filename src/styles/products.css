@@ -40,3 +40,7 @@
         text-decoration: line-through; }
       .products .product .product-price .sale {
         margin-left: 15px; }
+
+@media screen and (max-width: 768px) {
+  .products .product img.product-image {
+    width: 60%; } }

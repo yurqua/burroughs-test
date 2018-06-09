@@ -52,3 +52,12 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .products {
+        .product {
+            img.product-image {
+                width: 60%;
+            }
+        }
+    }
+}
