@@ -1,70 +1,73 @@
-header .row {
-  height: 57px;
-  align-items: center; }
-  header .row span.nav-button {
-    font-size: 0.6em;
-    background-color: #f1f1f1;
-    padding: 5px 1px;
-    margin-right: 10px;
-    border-radius: 50px;
-    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.2); }
-    header .row span.nav-button:hover {
-      text-decoration: none;
-      background-color: black;
-      color: white; }
-    header .row span.nav-button a {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 1.1em;
-      vertical-align: middle;
-      padding: 6px 8px;
-      background-color: #606362;
-      color: transparent;
-      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text; }
-      header .row span.nav-button a:hover {
-        color: white;
-        text-shadow: initial;
-        background-clip: initial;
-        text-decoration: none;
-        background-color: transparent; }
-  header .row a {
-    color: #686868;
-    text-decoration: none;
-    white-space: nowrap; }
-    header .row a .icon-button {
-      font-family: "fontello";
-      font-style: normal;
-      font-weight: normal;
-      color: #e2e2e2;
-      font-size: 1.7em;
-      margin-right: .4em;
-      text-align: center;
-      font-variant: normal;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-    header .row a span.phone {
-      font-size: 0.8em;
-      vertical-align: super;
-      font-weight: 600; }
-    header .row a:hover {
-      color: black; }
-      header .row a:hover .icon-button {
-        color: black; }
-      header .row a:hover span.phone {
-        color: black; }
-    header .row a.anchor-phone {
-      display: block; }
-
-@media screen and (max-width: 768px) {
+header {
+  position: relative;
+  background: white;
+  z-index: 100; }
   header .row {
-    text-align: center;
-    height: 90px; }
-    header .row a.anchor-phone {
-      text-align: left; } }
+    height: 57px;
+    align-items: center; }
+    header .row span.nav-button {
+      font-size: 0.6em;
+      background-color: #f1f1f1;
+      padding: 5px 1px;
+      margin-right: 10px;
+      border-radius: 50px;
+      box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+      header .row span.nav-button:hover {
+        text-decoration: none;
+        background-color: black;
+        color: white; }
+      header .row span.nav-button a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1em;
+        vertical-align: middle;
+        padding: 6px 8px;
+        background-color: #606362;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text; }
+        header .row span.nav-button a:hover {
+          color: white;
+          text-shadow: initial;
+          background-clip: initial;
+          text-decoration: none;
+          background-color: transparent; }
+    header .row a {
+      color: #686868;
+      text-decoration: none;
+      white-space: nowrap; }
+      header .row a .icon-button {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        color: #e2e2e2;
+        font-size: 1.7em;
+        margin-right: .4em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+      header .row a span.phone {
+        font-size: 0.8em;
+        vertical-align: super;
+        font-weight: 600; }
+      header .row a:hover {
+        color: black; }
+        header .row a:hover .icon-button {
+          color: black; }
+        header .row a:hover span.phone {
+          color: black; }
+      header .row a.anchor-phone {
+        display: block; }
+  @media screen and (max-width: 768px) {
+    header .row {
+      text-align: center;
+      height: 90px; }
+      header .row a.anchor-phone {
+        text-align: left; } }
 
 .hero {
   height: 623px;
@@ -89,24 +92,48 @@ header .row {
     line-height: 1.4em;
     padding: 0 9px; }
 
-.products h2 {
-  margin-top: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3.9em;
-  letter-spacing: -2px;
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: rgba(253, 183, 0, 0.7);
-  text-shadow: 1px 2px 3px white, 0 0 0 #000; }
-
-.products .product {
-  background-color: white;
-  z-index: 20; }
+.products {
+  padding-bottom: 20px;
+  background: white;
+  position: relative;
+  z-index: 30; }
+  .products h2 {
+    margin-top: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.9em;
+    letter-spacing: -2px;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: rgba(253, 183, 0, 0.7);
+    text-shadow: 1px 2px 3px white, 0 0 0 #000; }
+  .products .product {
+    background-color: white;
+    text-align: center;
+    z-index: 20; }
+    .products .product img.product-image {
+      border: 1px solid #f2f2f2;
+      margin-top: 18px;
+      width: 100%; }
+    .products .product .swatch-selector .swatch {
+      border: 1px solid #ccc;
+      padding: 1px;
+      margin: 8px 3px 4px 3px; }
+      .products .product .swatch-selector .swatch.selected {
+        border-color: #000; }
+    .products .product .product-title {
+      font-size: 1.15em;
+      font-weight: 600; }
+    .products .product .product-price {
+      margin-bottom: 50px; }
+      .products .product .product-price .original {
+        text-decoration: line-through; }
+      .products .product .product-price .sale {
+        margin-left: 15px; }
 
 .what-we-do {
   height: 537px;
@@ -199,3 +226,7 @@ body {
   src: url("./font/fontello.eot?53942234#iefix") format("embedded-opentype"), url("./font/fontello.woff?53942234") format("woff"), url("./font/fontello.ttf?53942234") format("truetype"), url("./font/fontello.svg?53942234#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 10px;
+  padding-left: 10px; }

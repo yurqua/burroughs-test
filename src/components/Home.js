@@ -16,7 +16,7 @@ class Home extends Component {
           <Container fluid={true} className='hero'>
             <Container>
               <content>
-                <Animated animationIn="fadeInDownBig" animationOut="fadeOut" isVisible={true}>
+                <Animated animationIn="fadeInRightBig" animationOut="fadeOut" isVisible={true}>
                   <Row>
                     <Col xs={12}>
                       <div className='logo'><img src={Logo} alt='INVIQA Logo'/></div>

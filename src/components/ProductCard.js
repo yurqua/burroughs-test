@@ -6,12 +6,18 @@ class ProductCard extends Component {
     render() {
       return (
         <Col xs={12} md={3} className='product'>
-         <div>Image</div>
-         <div className='swatch-selector'>Swatch selector</div>
-         <div className='product-name'>Product name</div>
-         <div className='prices'>
-             <span className='old-price'>&pound;</span>
-             <span className='new-price'>&pound;</span>
+         <div>
+           <img src={require('./../images/shirt-blue.jpg')} alt='' className='product-image'/>
+         </div>
+         <div className='swatch-selector'>
+           <img src={require('./../images/swatch-blue.png')} alt='' className='swatch' />
+           <img src={require('./../images/swatch-blue.png')} alt='' className='swatch' />
+           <img src={require('./../images/swatch-blue.png')} alt='' className='swatch' />
+         </div>
+         <div className='product-title'>Plaid Cotton Shirt</div>
+         <div className='product-price'>
+             <span className='original'>&pound;200</span>
+             <span className='sale'>&pound;160</span>
          </div>
         </Col>
       );

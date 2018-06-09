@@ -1,67 +1,70 @@
-header .row {
-  height: 57px;
-  align-items: center; }
-  header .row span.nav-button {
-    font-size: 0.6em;
-    background-color: #f1f1f1;
-    padding: 5px 1px;
-    margin-right: 10px;
-    border-radius: 50px;
-    box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.2); }
-    header .row span.nav-button:hover {
-      text-decoration: none;
-      background-color: black;
-      color: white; }
-    header .row span.nav-button a {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 1.1em;
-      vertical-align: middle;
-      padding: 6px 8px;
-      background-color: #606362;
-      color: transparent;
-      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      background-clip: text; }
-      header .row span.nav-button a:hover {
-        color: white;
-        text-shadow: initial;
-        background-clip: initial;
-        text-decoration: none;
-        background-color: transparent; }
-  header .row a {
-    color: #686868;
-    text-decoration: none;
-    white-space: nowrap; }
-    header .row a .icon-button {
-      font-family: "fontello";
-      font-style: normal;
-      font-weight: normal;
-      color: #e2e2e2;
-      font-size: 1.7em;
-      margin-right: .4em;
-      text-align: center;
-      font-variant: normal;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-    header .row a span.phone {
-      font-size: 0.8em;
-      vertical-align: super;
-      font-weight: 600; }
-    header .row a:hover {
-      color: black; }
-      header .row a:hover .icon-button {
-        color: black; }
-      header .row a:hover span.phone {
-        color: black; }
-    header .row a.anchor-phone {
-      display: block; }
-
-@media screen and (max-width: 768px) {
+header {
+  position: relative;
+  background: white;
+  z-index: 100; }
   header .row {
-    text-align: center;
-    height: 90px; }
-    header .row a.anchor-phone {
-      text-align: left; } }
+    height: 57px;
+    align-items: center; }
+    header .row span.nav-button {
+      font-size: 0.6em;
+      background-color: #f1f1f1;
+      padding: 5px 1px;
+      margin-right: 10px;
+      border-radius: 50px;
+      box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+      header .row span.nav-button:hover {
+        text-decoration: none;
+        background-color: black;
+        color: white; }
+      header .row span.nav-button a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1em;
+        vertical-align: middle;
+        padding: 6px 8px;
+        background-color: #606362;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text; }
+        header .row span.nav-button a:hover {
+          color: white;
+          text-shadow: initial;
+          background-clip: initial;
+          text-decoration: none;
+          background-color: transparent; }
+    header .row a {
+      color: #686868;
+      text-decoration: none;
+      white-space: nowrap; }
+      header .row a .icon-button {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        color: #e2e2e2;
+        font-size: 1.7em;
+        margin-right: .4em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+      header .row a span.phone {
+        font-size: 0.8em;
+        vertical-align: super;
+        font-weight: 600; }
+      header .row a:hover {
+        color: black; }
+        header .row a:hover .icon-button {
+          color: black; }
+        header .row a:hover span.phone {
+          color: black; }
+      header .row a.anchor-phone {
+        display: block; }
+  @media screen and (max-width: 768px) {
+    header .row {
+      text-align: center;
+      height: 90px; }
+      header .row a.anchor-phone {
+        text-align: left; } }

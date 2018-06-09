@@ -1,6 +1,10 @@
 .products {
+    padding-bottom: 20px;
+    background: white;
+    position: relative;
+    z-index: 30;
     h2 {
-        margin-top: 30px;
+        margin-top: 35px;
         text-align: center;
         text-transform: uppercase;
         font-weight: 700;
@@ -16,6 +20,35 @@
     }
     .product {
         background-color: white;
+        text-align: center;
         z-index: 20;
+        img.product-image {
+            border: 1px solid #f2f2f2;
+            margin-top: 18px;
+            width: 100%;
+        }
+        .swatch-selector {
+            .swatch {
+                border: 1px solid #ccc;
+                padding: 1px;
+                margin: 8px 3px 4px 3px;
+                &.selected {
+                    border-color: #000;
+                }
+            }
+        }
+        .product-title {
+            font-size: 1.15em;
+            font-weight: 600;
+        }
+        .product-price {
+            margin-bottom: 50px;
+            .original {
+                text-decoration: line-through;
+            }
+            .sale {
+                margin-left: 15px;
+            }
+        }
     }
 }

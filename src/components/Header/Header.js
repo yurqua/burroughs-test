@@ -15,6 +15,7 @@ class Header extends Component {
                 <NavButton name='What we do' url='/' />
                 <NavButton name='Resources' url='/' />
                 <NavButton name='Contact us' url='/' />
+                <NavButton name='Trigger hero with slide animations' url='/' />
               </nav>
             </Col>
             <Col xs='6' md='3' lg='2'>
