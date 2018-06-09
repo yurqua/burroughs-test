@@ -96,7 +96,7 @@ header {
   padding-bottom: 20px;
   background: white;
   position: relative;
-  z-index: 30; }
+  z-index: 40; }
   .products h2 {
     margin-top: 35px;
     text-align: center;
@@ -141,6 +141,8 @@ header {
 
 .what-we-do {
   height: 537px;
+  position: relative;
+  z-index: 30;
   box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   background: #ffde17;
@@ -258,7 +260,7 @@ header {
 .resources {
   height: 537px;
   position: relative;
-  z-index: -100;
+  z-index: 25;
   color: white;
   background: url("images/wood-pattern.gif");
   background-color: #252524;
@@ -268,15 +270,63 @@ header {
     display: inline-block;
     width: 147px;
     height: 147px;
-    margin-top: -74px;
-    margin-left: calc(50% - 73px);
+    margin-top: -120px;
+    margin-left: calc(50% - 87px);
     z-index: 1;
     border-top: 0 solid transparent;
-    border-bottom: 73px solid #ffcb1f;
-    border-left: 73px solid #ffd41c;
-    border-right: 73px solid transparent;
+    border-bottom: 175px solid #ffcb1f;
+    border-left: 175px solid #ffd41c;
+    border-right: 0px solid transparent;
     transform: rotate(-45deg);
     box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.1); }
+  .resources .header h2 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.9em;
+    letter-spacing: -2px; }
+    .resources .header h2 svg {
+      margin: 0 auto;
+      display: block; }
+    .resources .header h2 span {
+      position: absolute;
+      opacity: 0; }
+  .resources .article-block {
+    border-top: 1px solid #474646;
+    padding: 0; }
+    .resources .article-block:before {
+      content: ' ';
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      margin-top: -2px;
+      border-top: 1px solid #191919; }
+    .resources .article-block .row {
+      margin: 0 -10px; }
+      .resources .article-block .row .article h3 {
+        font-size: 1.1em;
+        text-transform: uppercase;
+        border-bottom: 1px solid #474646;
+        font-weight: 700;
+        margin: 30px 0 0 0; }
+        .resources .article-block .row .article h3:after {
+          content: ' ';
+          display: block;
+          position: relative;
+          width: 100%;
+          margin-top: 13px;
+          border-top: 1px solid #191919; }
+      .resources .article-block .row .article .content, .resources .article-block .row .article .more-link {
+        color: #ffc222; }
+        .resources .article-block .row .article .content a, .resources .article-block .row .article .more-link a {
+          color: white; }
+          .resources .article-block .row .article .content a:hover, .resources .article-block .row .article .more-link a:hover {
+            color: white;
+            background-color: #00000087;
+            padding: 0px 8px;
+            margin: 0px -8px;
+            border-radius: 10px;
+            text-decoration: none; }
 
 .footer {
   height: 92px;

@@ -1,8 +1,9 @@
 @import 'variables.scss';
 .what-we-do {
     height: 537px;
+    position: relative;
+    z-index: 30;    
     box-shadow: $small-shadow-inner;
-
     text-align: center;
     background: #ffde17;
     background: -moz-linear-gradient(left, #ffde17 0%, #ffde17 50%, #ffc222 50%, #ffc222 100%);
