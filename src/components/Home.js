@@ -6,9 +6,6 @@ import Resources from './Resources'
 import '../App.css';
 
 class Home extends Component {
-    componentDidMount () {
-    }
-
     render() {
       return (
         <div>

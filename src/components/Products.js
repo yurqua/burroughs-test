@@ -4,6 +4,10 @@ import ProductCard from './ProductCard'
 
 class Products extends Component {
     componentDidMount () {
+      let products = require('./../services/product-details.json');
+      this.setState ({
+        products: products.products
+      });
     }
 
     render() {
@@ -15,14 +19,9 @@ class Products extends Component {
                   <Col xs={12}>
                     <h2>Products</h2>
                   </Col>
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
-                  <ProductCard />
+                  {this.state && this.state.products.map((product) => 
+                    <ProductCard key={product.product_id} product={product} />)
+                  }
                 </Row>
               </content>
             </Container>
