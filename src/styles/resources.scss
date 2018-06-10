@@ -1,0 +1,182 @@
+@import 'variables.scss';
+.resources {
+    height: 537px;
+    position: relative;
+    z-index: 25;
+    color: white;
+    background: url('images/wood-pattern.gif');
+    background-color: #252524;
+    box-shadow: $small-shadow-inner;
+    &.row:before {
+        content: " ";
+        display: inline-block;
+        width: 147px;
+        height: 147px;
+        margin-top: -120px;
+        margin-left: calc(50% - 87px);
+        z-index: 1;
+        border-top: 0 solid transparent;
+        border-bottom: 175px solid #ffcb1f;
+        border-left: 175px solid #ffd41c;
+        border-right: 0px solid transparent;
+        transform: rotate(-45deg);    
+        box-shadow: $small-shadow; 
+    }
+    .header h2 {
+        height: 30px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3.9em;
+        letter-spacing: -2px;
+        svg {
+            margin: 0 auto;
+            display: block;
+        }
+        span {
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .article-block {
+        border-top: 1px solid #474646;
+        padding: 0;
+        &:before {
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            margin-top: -2px;
+            border-top: 1px solid #191919;
+        }
+        .row {
+            margin: 0 -10px;
+            .article {
+                h3 {
+                    font-size: 1.1em;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #474646;
+                    font-weight: 700;
+                    margin: 30px 0 0 0;
+                    &:after {
+                        content: ' ';
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        margin-top: 13px;
+                        border-top: 1px solid #191919;        
+                    } 
+                }
+                .content {
+                    border-bottom: 1px solid #474646;
+                }
+                .more-link {
+                    margin-top: 35px;
+                }
+                .content, .more-link {
+                    color: #ffc222;
+                    height: 80%;
+                    a {
+                        color: white;
+                        &:hover {
+                            color: #ffc222;
+                        }
+                    }
+                    p {
+                        font-size: 0.95em;
+                        line-height: 1.2em;
+                        padding: 8px 10px 5px 0;
+                        margin: 0;
+                    }
+                    img {
+                        margin-top: 10px;
+                        width: 163px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    height: 92px;
+    background-color: #ffdb05;
+    box-shadow: $big-shadow-inner;
+}
+@media screen and (max-width: 992px) {
+    .resources {
+        .article-block {
+            .row {
+                .article {
+                    .content {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resources {
+        height: 887px;
+        .header h2 {
+            height: 80px;
+            margin-top: 50px;        
+        }
+        &.row:before {
+            margin-top: -100px;
+            margin-left: calc(50% - 74px);
+        }
+        .article-block {
+            &:before {
+                content: ' ';
+                margin-top: -2px;
+            }
+            .row {
+                margin: 0 -10px;
+                .article {
+                    &:last-child {
+                        margin-bottom: 25px;
+                    }
+                    h3 {
+                        font-size: 1.1em;
+                        margin: 30px 0 0 0;
+                        &:after {
+                            content: ' ';
+                            margin-top: 13px;
+                        } 
+                    }
+                    .content {
+                        padding-bottom: 10px;
+                    }
+                    .more-link {
+                        margin-top: 0;
+                    }
+                    .content, .more-link {
+                        height: initial;
+                        p {
+                            font-size: 0.95em;
+                            line-height: 1.2em;
+                            padding: 8px 10px 5px 0;
+                            margin: 0;
+                        }
+                        img {
+                            width: 163px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resources {
+        &.row:before {
+            border-bottom: 73px solid #ffc222;
+            border-left: 73px solid #ffde17;
+        }
+    }
+}

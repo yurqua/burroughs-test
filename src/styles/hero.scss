@@ -1,0 +1,30 @@
+@import 'variables.scss';
+.hero {
+    height: 623px;
+    text-align: center;
+    background: #ffde17;
+    background: -moz-linear-gradient(top, #ffde17 0%, #ffd41c 16%, #fbc616 33%, #fdb700 50%);
+    background: -webkit-linear-gradient(top, #ffde17 0%,#ffd41c 16%,#fbc616 33%,#fdb700 50%);
+    background: linear-gradient(to bottom, #ffde17 0%,#ffd41c 16%,#fbc616 33%,#fdb700 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde17', endColorstr='#fdb700',GradientType=0 );
+    box-shadow: $big-shadow-inner;
+    .logo {
+        img {
+            width: 240px;
+            height: 292px;
+            margin-top: 83px;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.1em;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    .hero-content {
+        font-size: 1.05em;
+        line-height: 1.4em;
+        padding: 0 9px;
+    }
+    text-shadow: $text-shadow-white;
+}

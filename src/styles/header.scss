@@ -1,0 +1,99 @@
+header {
+    position: relative;
+    background: white;
+    z-index: 100;
+    .row {
+        height: 57px;
+        align-items: center;
+        span.nav-button {
+            font-size: 0.6em;
+            background-color: #f1f1f1;
+            padding: 5px 1px;
+            margin-right: 10px;
+            border-radius: 50px;
+            box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+            &:hover {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+            }
+            a {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.1em;
+                vertical-align: middle;
+                padding: 6px 8px;
+                background-color: #606362;
+                color: transparent;
+                text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                &:hover {
+                    color: white;
+                    text-shadow: initial;
+                    background-clip: initial;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+        }
+        a {
+            color: #686868;
+            text-decoration: none;
+            white-space: nowrap;
+            .icon-button {
+                font-family: "fontello";
+                font-style: normal;
+                font-weight: normal;
+                color: #e2e2e2;
+                font-size: 1.7em;
+                margin-right: .4em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }  
+            span.phone {
+                font-size: 0.8em;
+                vertical-align: super;
+                font-weight: 600;
+            }
+            &:hover {
+                color: black;
+                .icon-button, span.phone {
+                    color: black;
+                }
+            }
+            &.anchor-phone {
+                display: block;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .row {
+            text-align: center;
+            height: 90px;
+            a.anchor-phone {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen\0 {
+    header .row span.nav-button a {
+        background-color: transparent;
+        color: #606362;   
+        border-radius: 15px; 
+    }
+}
+
+_:-ms-fullscreen, :root .ie11up {
+    header .row span.nav-button a {
+        background-color: transparent;
+        color: #606362;    
+        border-radius: 15px; 
+    }
+}
