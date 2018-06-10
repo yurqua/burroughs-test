@@ -81,6 +81,7 @@ header {
   text-shadow: 1px 2px 1px rgba(255, 255, 255, 0.5); }
   .hero .logo img {
     width: 240px;
+    height: 292px;
     margin-top: 83px; }
   .hero h2 {
     text-transform: uppercase;
