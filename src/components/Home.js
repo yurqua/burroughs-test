@@ -24,9 +24,9 @@ class Home extends Component {
                       <Row>
                         <Col xs={12} md={{ size: 6, offset: 3 }} className='hero-content'>
                           Inviqa, formally known as Ibuildings are starting the
-                          new&nbsp;year with a fresh new innovative look. We are a bunch
+                          new{'\u00A0'}year with a fresh new innovative look. We are a bunch
                           of intelligent people who always pride the 
-                          quality&nbsp;in&nbsp;our&nbsp;work.
+                          quality{'\u00A0'}in{'\u00A0'}our{'\u00A0'}work.
                         </Col>
                       </Row>
                     </Col>
@@ -63,7 +63,7 @@ class Home extends Component {
                   <Col xs={12} className='wrapper'>
                     <Row>
                       <Col xs={12} className='header'>
-                        <h2>What we&nbsp;do</h2>
+                        <h2>What we{'\u00A0'}do</h2>
                       </Col>
                       <Col xs={12} sm={6} md={3} className='quote-mark'>
                         <span>
@@ -126,23 +126,17 @@ class Home extends Component {
                       <Col xs={12} md={4} className='article'>
                         <h3>White papers</h3>
                         <div className='content'>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur{'\u00A0'}adipiscing elit.</p>
                           <p>Fusce tortor arcu, accumsan in turpis et, efficitur porttitor ligula.</p>
                           <p>Morbi ac gravida diam.</p>
-                        </div>
-                        <div className='more-link'>
-                          <Link to='/'>More</Link> White Papers 
                         </div>
                       </Col>
                       <Col xs={12} md={3} className='article'>
                         <h3>Resources</h3>
                         <div className='content'>
                           <p>
-                            <Link to='/'>Click here</Link> to enter your email address and receive our Monthly Newsletter
+                            <Link to='/'>Click here</Link> to enter your email{'\u00A0'}address and receive our{'\u00A0'}Monthly Newsletter
                           </p>
-                        </div>
-                        <div className='more-link'>
-                          <Link to='/'>More</Link> Resources 
                         </div>
                       </Col>
                       <Col xs={12} md={5} className='article'>
@@ -156,11 +150,25 @@ class Home extends Component {
                               </p>
                             </Col>
                             <Col xs={12} sm={6}>
-                              <Link to='/'>Image</Link>
+                              <a href='https://jobs.jobvite.com/inviqa/jobs'><img src={require('./../images/tech-portal-banner.jpg')} alt='Inviqa Techportal logo' /></a>
                               <p>Visit our techPortal</p>
                             </Col>
                           </Row>
                         </div>
+                      </Col>
+                    </Row>
+                    <Row className='article'>
+                      <Col xs={12} md={4} className='article'>
+                        <div className='more-link'>
+                          <Link to='/'>More</Link> White Papers 
+                        </div>
+                      </Col>
+                      <Col xs={12} md={3} className='article'>
+                        <div className='more-link'>
+                          <Link to='/'>More</Link> Resources 
+                        </div>
+                      </Col>
+                      <Col xs={12} md={5} className='article'>
                         <div className='more-link'>
                           <Link to='/'>View</Link> the latest vacancies 
                         </div>
