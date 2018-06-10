@@ -36,6 +36,7 @@ class ProductCard extends Component {
               <img src={require('./../images/swatch-' + colour + '.png')} 
                 key={colour} 
                 alt={colour.charAt(0).toUpperCase() + colour.slice(1)}
+                title={colour.charAt(0).toUpperCase() + colour.slice(1)}
                 onMouseEnter={((e) => this.handleOnMouseEnter(e, colour))}
                 className={'swatch ' + selected}  
               />

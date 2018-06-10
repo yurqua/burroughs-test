@@ -56,9 +56,7 @@ header {
         font-weight: 600; }
       header .row a:hover {
         color: black; }
-        header .row a:hover .icon-button {
-          color: black; }
-        header .row a:hover span.phone {
+        header .row a:hover .icon-button, header .row a:hover span.phone {
           color: black; }
       header .row a.anchor-phone {
         display: block; }
@@ -68,6 +66,17 @@ header {
       height: 90px; }
       header .row a.anchor-phone {
         text-align: left; } }
+
+@media screen\0 {
+  header .row span.nav-button a {
+    background-color: transparent;
+    color: #606362;
+    border-radius: 15px; } }
+
+_:-ms-fullscreen header .row span.nav-button a, :root .ie11up header .row span.nav-button a {
+  background-color: transparent;
+  color: #606362;
+  border-radius: 15px; }
 
 .hero {
   height: 623px;
